@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Law Firm</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <meta name="description" content="Top legal services with a client-centered approach. Contact our expert attorneys today!">
+<meta name="keywords" content="law firm, legal services, attorneys, corporate law, family law">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Modern Law Firm Logo">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <a href="contact.html" class="cta-button">Free Consultation</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="video-background">
+                <video autoplay muted loop>
+                    <source src="hero-video.mp4" type="video/mp4">
+                    <img src="fallback-image.jpg" alt="Fallback Image">
+                </video>
+            </div>
+            <div class="hero-content">
+                <h1 class="animated-text">Your Trusted Legal Partner</h1>
+                <p class="animated-text">Providing Excellence in Legal Services</p>
+                <!--<form class="hero-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit" class="cta-button">Get a Free Consultation</button>
+                </form>-->
+            </div>
+            <div class="scroll-down">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- About Brief Section -->
+        <section class="about-brief">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>Decades of Legal Excellence</h2>
+                    <p class="tagline">Dedicated to achieving the best possible outcome for every client.</p>
+                    <p>Our team of experienced attorneys combines deep legal expertise with a client-centered approach. We understand that each case is unique and requires personalized attention and strategic planning.</p>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1,500+</span>
+                            <span class="stat-label">Cases Won</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                    <a href="about.html" class="about-link">More About Our Firm →</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/5668869/pexels-photo-5668869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Lawyers discussing case">
+                    <div class="image-caption">Our team collaborating on client solutions</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <h2 class="animate-on-scroll">Our Services</h2>
+            <div class="services-container">
+                <!-- Service Cards -->
+                <div class="service-card">
+                    <div class="service-icon">⚖️</div>
+                    <h3 class="animate-on-scroll">Corporate Law</h3>
+                    <p>Expert advice for your business needs, including contracts, mergers & acquisitions, compliance, and corporate governance solutions tailored to your company's unique requirements.</p>
+                    <a href="#" class="learn-more">Learn more →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👪</div>
+                    <h3 class="animate-on-scroll">Family Law</h3>
+                    <p>Compassionate support for family matters, including divorce, child custody, adoption, and other sensitive family issues handled with the care and attention they deserve.</p>
+                    <a href="#" class="learn-more">Learn more →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3 class="animate-on-scroll">Criminal Law</h3>
+                    <p>Strong defense for your rights with experienced representation in criminal cases, from minor infractions to major felonies, ensuring fair treatment throughout the legal process.</p>
+                    <a href="#" class="learn-more">Learn more →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3 class="animate-on-scroll">Real Estate Law</h3>
+                    <p>Comprehensive legal assistance for property transactions, including purchases, sales, leasing, zoning issues, and property disputes to protect your real estate investments.</p>
+                    <a href="#" class="learn-more">Learn more →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📜</div>
+                    <h3 class="animate-on-scroll">Employment Law</h3>
+                    <p>Protecting your rights in the workplace with legal support for contracts, disputes, discrimination claims, and compliance with labor laws.</p>
+                    <a href="#" class="learn-more">Learn more →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3 class="animate-on-scroll">Intellectual Property</h3>
+                    <p>Safeguarding your innovations with legal services for patents, trademarks, copyrights, and intellectual property disputes.</p>
+                    <a href="#" class="learn-more">Learn more →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Banner -->
+        <section class="cta-banner">
+            <div class="cta-content">
+                <h2 class="animate-on-scroll">Need Legal Assistance?</h2>
+                <p class="animate-on-scroll">Our team of experienced attorneys is here to help. Contact us today for a free consultation.</p>
+                <a href="contact.html" class="cta-button animate-on-scroll">Get in Touch</a>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process">
+            <div class="process-container">
+                <h2 class="animate-on-scroll">Our Process</h2>
+                <p class="subtitle animate-on-scroll">How We Deliver Exceptional Legal Solutions</p>
+                <p class="description animate-on-scroll">
+                    At Modern Lawfirm, we recognize that legal challenges can be overwhelming. That’s why we’ve developed a client-focused approach designed to provide clarity, confidence, and results. Here’s how we partner with you to achieve your goals:
+                </p>
+                <div class="process-steps">
+                    <!-- Step 1 -->
+                    <div class="process-step animate-on-scroll">
+                        <div class="step-icon">01</div>
+                        <h3>Initial Consultation</h3>
+                        <p>We start by listening. During a detailed consultation, we gain a deep understanding of your unique situation, objectives, and concerns. Together, we outline a tailored strategy to address your needs.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="process-step animate-on-scroll">
+                        <div class="step-icon">02</div>
+                        <h3>Clear Agreement</h3>
+                        <p>Transparency is key. We formalize our partnership with a comprehensive engagement letter, detailing the scope of work, timelines, and fees. No surprises—just a clear path forward.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="process-step animate-on-scroll">
+                        <div class="step-icon">03</div>
+                        <h3>Strategic Action</h3>
+                        <p>With your approval, we take decisive action. Our team collaborates with relevant stakeholders, including government agencies, financial institutions, and other parties, to advance your case efficiently.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="process-step animate-on-scroll">
+                        <div class="step-icon">04</div>
+                        <h3>Ongoing Communication</h3>
+                        <p>You’ll never be left in the dark. We provide regular updates on the progress of your case, ensuring you’re informed and confident every step of the way.</p>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="process-step animate-on-scroll">
+                        <div class="step-icon">05</div>
+                        <h3>Resolution & Handover</h3>
+                        <p>Once your matter is resolved, we ensure a seamless handover of all documents and provide a detailed explanation of the outcome. Our support continues as long as you need it.</p>
+                    </div>
+                    <!-- Step 6 -->
+                    <div class="process-step animate-on-scroll">
+                        <div class="step-icon">06</div>
+                        <h3>Long-Term Partnership</h3>
+                        <p>Our commitment doesn’t end with your case. We’re here to support your future legal needs, offering guidance and expertise whenever you need us.</p>
+                    </div>
+                </div>
+                <div class="cta-container animate-on-scroll">
+                    <h3>Ready to Get Started?</h3>
+                    <p>Schedule a consultation with our legal experts today.</p>
+                    <a href="contact.html" class="cta-button">Book a Consultation</a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        
+<!-- podcast-section.html -->
+<section class="podcast-section">
+    <div class="section-header">
+      <h2>Our Legal Podcast</h2>
+      <p>Insights and discussions on the latest legal trends and topics, hosted by our expert attorneys.</p>
+    </div>
+    
+    <div class="podcast-grid">
+      <!-- Podcast Episode 1 -->
+      <div class="podcast-card" data-video-id="jNQXAC9IVRw">
+        <div class="podcast-thumbnail">
+          <img src="images/podcast1.jpg" alt="Intellectual Property in the Digital Age">
+          <div class="podcast-play-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="podcast-info">
+          <h3 class="podcast-title">Intellectual Property in the Digital Age</h3>
+          <div class="podcast-meta">
+            <span>Episode 1</span>
+            <span>25:34</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Podcast Episode 2 -->
+      <div class="podcast-card" data-video-id="jNQXAC9IVRw">
+        <div class="podcast-thumbnail">
+          <img src="images/podcast2.jpg" alt="Corporate Law Update 2025">
+          <div class="podcast-play-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="podcast-info">
+          <h3 class="podcast-title">Corporate Law Update 2025</h3>
+          <div class="podcast-meta">
+            <span>Episode 2</span>
+            <span>32:15</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Podcast Episode 3 -->
+      <div class="podcast-card" data-video-id="jNQXAC9IVRw">
+        <div class="podcast-thumbnail">
+          <img src="images/podcast3.jpg" alt="Family Law Essentials">
+          <div class="podcast-play-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="podcast-info">
+          <h3 class="podcast-title">Family Law Essentials</h3>
+          <div class="podcast-meta">
+            <span>Episode 3</span>
+            <span>28:42</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Video Popup (add this right before the closing body tag) -->
+  <div class="popup-overlay" id="videoPopup">
+    <div class="popup-content">
+      <button class="popup-close" id="closePopup">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        </svg>
+      </button>
+      <div class="popup-video-container">
+        <iframe id="youtubeFrame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2 class="animate-on-scroll">What Our Clients Say</h2>
+            <p class="testimonials-subtitle animate-on-scroll">Hear from those who have trusted us with their legal needs.</p>
+            <div class="testimonials-container">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-content">
+                        <p>"Modern Law Firm provided exceptional service during a very challenging time. Their expertise and dedication made all the difference in my case. I highly recommend them!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/50" alt="Client 1">
+                            <div class="author-details">
+                                <span class="author-name">John Doe</span>
+                                <span class="author-role">Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-content">
+                        <p>"The team at Modern Law Firm was professional, responsive, and truly cared about my case. They achieved a fantastic outcome, and I couldn't be happier."</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/50" alt="Client 2">
+                            <div class="author-details">
+                                <span class="author-name">Jane Smith</span>
+                                <span class="author-role">Entrepreneur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-content">
+                        <p>"I was impressed by their attention to detail and commitment to my case. Modern Law Firm is my go-to for all legal matters. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/50" alt="Client 3">
+                            <div class="author-details">
+                                <span class="author-name">Michael Brown</span>
+                                <span class="author-role">Real Estate Investor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="news">
+            <h2 class="animate-on-scroll">News & Updates</h2>
+            <p class="news-subtitle animate-on-scroll">Stay informed with the latest legal insights and firm updates.</p>
+            <div class="news-container">
+                <!-- News Card 1 -->
+                <div class="news-card animate-on-scroll">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x250" alt="News Image 1">
+                    </div>
+                    <div class="news-content">
+                        <h3>New Legislation Impacting Businesses</h3>
+                        <p>Learn how recent changes in corporate law could affect your business and what steps you can take to stay compliant.</p>
+                        <a href="#" class="news-link">Read More →</a>
+                    </div>
+                </div>
+                <!-- News Card 2 -->
+                <div class="news-card animate-on-scroll">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x250" alt="News Image 2">
+                    </div>
+                    <div class="news-content">
+                        <h3>Understanding Intellectual Property Rights</h3>
+                        <p>Discover the importance of protecting your intellectual property and how our team can help safeguard your innovations.</p>
+                        <a href="#" class="news-link">Read More →</a>
+                    </div>
+                </div>
+                <!-- News Card 3 -->
+                <div class="news-card animate-on-scroll">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x250" alt="News Image 3">
+                    </div>
+                    <div class="news-content">
+                        <h3>Client Success Story: Landmark Case Win</h3>
+                        <p>Read about how we secured a landmark victory for our client in a high-stakes litigation case.</p>
+                        <a href="#" class="news-link">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!--OUR TEAM SECTION-->
+        <section class="team-section">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+              <h2>Meet Our Legal Team</h2>
+              <p>Our diverse team of experienced attorneys is dedicated to providing exceptional legal services with a modern approach to law.</p>
+            </div>
+            
+            <div class="team-grid">
+              <!-- Team Member 1 -->
+              <div class="team-member" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="member-image">
+                  <img src="images/attorney1.jpg" alt="Sarah Johnson">
+                </div>
+                <div class="member-info">
+                  <h3 class="member-name">Sarah Johnson</h3>
+                  <p class="member-role">Managing Partner</p>
+                  <p class="member-bio">With over 15 years of experience in corporate law, Sarah leads our firm with innovative approaches to complex legal challenges.</p>
+                  <div class="member-contact">
+                    <button class="contact-btn">Contact</button>
+                    <div class="social-links">
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Team Member 2 -->
+              <div class="team-member" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="member-image">
+                  <img src="images/attorney2.jpg" alt="Michael Chen">
+                </div>
+                <div class="member-info">
+                  <h3 class="member-name">Michael Chen</h3>
+                  <p class="member-role">Intellectual Property</p>
+                  <p class="member-bio">Michael specializes in technology patents and copyright law, helping startups and established companies protect their innovations.</p>
+                  <div class="member-contact">
+                    <button class="contact-btn">Contact</button>
+                    <div class="social-links">
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Team Member 3 -->
+              <div class="team-member" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="member-image">
+                  <img src="images/attorney3.jpg" alt="Olivia Rodriguez">
+                </div>
+                <div class="member-info">
+                  <h3 class="member-name">Olivia Rodriguez</h3>
+                  <p class="member-role">Family Law</p>
+                  <p class="member-bio">Olivia brings compassion and expertise to family law matters, focusing on mediation and collaborative solutions.</p>
+                  <div class="member-contact">
+                    <button class="contact-btn">Contact</button>
+                    <div class="social-links">
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Team Member 4 -->
+              <div class="team-member" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="member-image">
+                  <img src="images/attorney4.jpg" alt="David Washington">
+                </div>
+                <div class="member-info">
+                  <h3 class="member-name">David Washington</h3>
+                  <p class="member-role">Litigation</p>
+                  <p class="member-bio">A seasoned litigator with a track record of success in complex commercial disputes and class action lawsuits.</p>
+                  <div class="member-contact">
+                    <button class="contact-btn">Contact</button>
+                    <div class="social-links">
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- Companies Section -->
+        <section class="companies">
+            <div class="companies-container">
+                <!-- Text on the Left -->
+                <div class="companies-text animate-on-scroll">
+                    <h2>Companies We've Worked With</h2>
+                    <p>We are proud to have collaborated with some of the most respected companies in the industry. Our expertise and dedication have helped them achieve their legal goals.</p>
+                </div>
+                <!-- Logo Carousel on the Right -->
+                <div class="companies-carousel animate-on-scroll">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="https://via.placeholder.com/150x80" alt="Company 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://via.placeholder.com/150x80" alt="Company 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://via.placeholder.com/150x80" alt="Company 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://via.placeholder.com/150x80" alt="Company 4">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://via.placeholder.com/150x80" alt="Company 5">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://via.placeholder.com/150x80" alt="Company 6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>About Us</h3>
+                <p>Modern Law Firm provides excellent legal services with a client-centered approach. Our team of experienced attorneys is dedicated to achieving the best possible outcomes for our clients.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="attorneys.html">Our Attorneys</a></li>
+                    <li><a href="blog.html">Legal Blog</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Information</h3>
+                <ul class="contact-info">
+                    <!-- Address -->
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Legal Avenue, Suite 500<br>Metropolis, MP 10001</span>
+                    </li>
+                    <!-- Phone Number -->
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>(123) 456-7890</span>
+                    </li>
+                    <!-- Email Address -->
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@modernlawfirm.com</span>
+                    </li>
+                    <!-- Office Hours -->
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Mon - Fri: 9:00 AM - 5:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+      </div>
+      <div class="container">
+        <!-- Payment Methods Section -->
+        <div class="payment-methods">
+            <h4>Payment Options</h4>
+            <div class="payment-icons">
+                <!-- M-PESA Payment Option -->
+                <span class="payment-icon"><i class="fas fa-money-bill-wave"></i> M-PESA</span>
+                <!-- Bank Transfer Payment Option -->
+                <span class="payment-icon"><i class="fas fa-university"></i> Bank Transfer</span>
+                <!-- PayPal Payment Option -->
+                <span class="payment-icon"><i class="fab fa-cc-paypal"></i> PayPal</span>
+                <!-- Visa Payment Option -->
+                <span class="payment-icon"><i class="fab fa-cc-visa"></i> Visa</span>
+                <!-- Mastercard Payment Option -->
+                <span class="payment-icon"><i class="fab fa-cc-mastercard"></i> Mastercard</span>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="copyright">
+            <p>&copy; 2023 Modern Law Firm</div>
+            </div>
+        </footer>
+    
+        <!-- JavaScript File -->
+
+        <script src="script.js"></script>
+
+<!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      once: true, // whether animation should happen only once - while scrolling down
+      offset: 120, // offset (in px) from the original trigger point
+      easing: 'ease-out-sine', // default easing for AOS animations
+    });
+  </script>
+    </footer>
+
+</body>
+</html>
